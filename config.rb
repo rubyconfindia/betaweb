@@ -57,6 +57,7 @@ set :haml, { :ugly => true, :format => :html5 }
 
 # Build-specific configuration
 configure :build do
+  ignore "README.md"
   # For example, change the Compass output style for deployment
   # activate :minify_css
 
@@ -71,6 +72,12 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+  after_build do |builder|
+    src = File.join(config[:source],"README.md")
+    dst = File.join(config[:build_dir],"README.md")
+    builder.source_paths << File.dirname(__FILE__)
+    builder.copy_file(src,dst)
+  end
 end
 
 activate :deploy do |deploy|
