@@ -3,23 +3,32 @@
 
 $white: #fff;
 $black: #000;
-$gray: rgba($black, 0.6);
-$gray-light: rgba($black, 0.5);
-$gray-xlight: rgba($black, 0.2);
+$gray-dark: lighten($black, 20%);
+$gray: lighten($black, 40%);
+$gray-light: lighten($black, 50%);
+$gray-xlight: lighten($black, 75%);
+$gray-xxlight: lighten($black, 90%);
 
 $blue: #2da4cc;
-$blue-light: rgba($blue, 0.8);
+$blue-light: lighten($blue, 20%);
 
-$red: #a00;
-$red-light: rgba($red, 0.8);
+$red: #900;
+$red-light: lignten($red, 20%);
 $red-dark: #950000;
 
 $brown: #ffc62a;
-$brown-light: rgba($brown, 0.5);
+$brown-light: lighten($brown, 50%);
 
-$cream: #fef0c4;
+$yellow: #fc0;
+$yellow-light: lighten($yellow, 30%);
+$yellow-xlight: lighten($yellow, 40%);
+
+$cream: $yellow-xlight;
+
+// $yellow-light: 
 
 // Fonts
 // =========
 
-$sans:  "proxima nova soft", "proxima-nova-soft", "helvetica neue", helvetica, arial, sans-serif;
+
+$sans: "freight-sans-pro", "helvetica neue", helvetica, arial, sans-serif;

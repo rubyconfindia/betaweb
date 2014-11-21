@@ -1,1 +1,7 @@
 /build
+*.sass-cache
+*_site
+_site
+.rvmrc
+.ruby-gemset
+.ruby-version

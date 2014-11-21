@@ -1,212 +1,69 @@
-/* line 1, ../sass/base/_typography.scss */
-body {
-  font: 16px/1.5 "proxima nova soft", "proxima-nova-soft", "helvetica neue", helvetica, arial, sans-serif;
-}
-@media screen and (max-width: 700px) {
-  /* line 1, ../sass/base/_typography.scss */
-  body {
-    font-size: 14px;
-  }
-}
+/*
+Error: It's not clear which file to import for '@import "base/variables"'.
+       Candidates:
+         base/_variables.scss
+         base/variables.scss
+       Please delete or rename all but one of these files.
+        on line 9 of /Users/arpanchinta/Projects/rubyconfindia/dev/source/2015/sass/style.scss
 
-/* line 6, ../sass/base/_typography.scss */
-h1, h2, h3, h4, h5, h6, p, ol, ul, li {
-  margin: 0;
-  line-height: 1.5;
-  font-weight: 300;
-  color: rgba(0, 0, 0, 0.6);
-}
+4: @import "compass/css3";
+5: @import "compass/css3/images";
+6: @import "compass/utilities/general/clearfix";
+7: @import "base/grids";
+8: 
+9: @import "base/variables";
+10: @import "base/typography";
+11: 
+12: @import "modules/body";
+13: @import "modules/banner";
+14: @import "modules/actions";
 
-/* line 13, ../sass/base/_typography.scss */
-h2 {
-  font-size: 34px;
-  padding: 0.69em 0 0.413em;
-}
-@media screen and (max-width: 900px) {
-  /* line 13, ../sass/base/_typography.scss */
-  h2 {
-    font-size: 21px;
-  }
-}
-@media screen and (max-width: 700px) {
-  /* line 13, ../sass/base/_typography.scss */
-  h2 {
-    font-weight: 300;
-  }
-}
-
-/* line 20, ../sass/base/_typography.scss */
-h3 {
-  font-size: 24px;
-  padding: 0.35em 0.0em 0.15em;
-}
-@media screen and (max-width: 900px) {
-  /* line 20, ../sass/base/_typography.scss */
-  h3 {
-    font-size: 16px;
-  }
-}
-
-/* line 26, ../sass/base/_typography.scss */
-p, li {
-  font-size: 18px;
-  padding-top: 1.5em;
-}
-
-/* line 31, ../sass/base/_typography.scss */
-strong, .strong {
-  font-weight: bold;
-}
-
-/* line 35, ../sass/base/_typography.scss */
-a {
-  color: #a00;
-  text-decoration: none;
-}
-
-/* line 36, ../sass/base/_typography.scss */
-a:hover, a:focus {
-  color: #950000;
-  border-bottom: dotted 1px;
-}
-
-/* line 1, ../sass/modules/_body.scss */
-body {
-  background: #fef0c4;
-  margin: 0;
-  padding: 0;
-}
-
-/* line 1, ../sass/modules/_banner.scss */
-header {
-  display: block;
-  margin: 0 0 24px;
-  padding: 1px 20px;
-  text-align: center;
-  position: relative;
-  background: transparent url("../images/water.svg") no-repeat top center;
-  background-size: 100% auto;
-}
-@media screen and (max-width: 1600px) {
-  /* line 1, ../sass/modules/_banner.scss */
-  header {
-    background-size: 100% auto;
-    margin-bottom: 12px;
-  }
-}
-/* line 12, ../sass/modules/_banner.scss */
-header a.github {
-  position: absolute;
-  top: 0;
-  right: 0;
-  border: none;
-}
-@media screen and (max-width: 800px) {
-  /* line 12, ../sass/modules/_banner.scss */
-  header a.github {
-    display: none;
-  }
-}
-/* line 18, ../sass/modules/_banner.scss */
-header h1 {
-  display: block;
-  font-weight: bold;
-  padding: 5% 0 0 0;
-  margin: 20px 0 0 0;
-  text-align: center;
-}
-@media screen and (max-width: 500px) {
-  /* line 18, ../sass/modules/_banner.scss */
-  header h1 {
-    padding: 8% 0% 5% 0%;
-  }
-}
-/* line 27, ../sass/modules/_banner.scss */
-header h1 a {
-  color: #a00;
-  display: block;
-  font-size: 90px;
-  line-height: 0.9em;
-  padding-top: 150px;
-  border: none;
-  font-family: "bello-pro", georgia, serif;
-  background: transparent url("../images/logo.svg") no-repeat top center;
-  background-size: 140px auto;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-}
-@media screen and (max-width: 900px) {
-  /* line 27, ../sass/modules/_banner.scss */
-  header h1 a {
-    font-size: 76px;
-  }
-}
-@media screen and (max-width: 800px) {
-  /* line 27, ../sass/modules/_banner.scss */
-  header h1 a {
-    font-size: 68px;
-  }
-}
-@media screen and (max-width: 700px) {
-  /* line 27, ../sass/modules/_banner.scss */
-  header h1 a {
-    font-size: 54px;
-    font-weight: normal;
-  }
-}
-@media screen and (max-width: 600px) {
-  /* line 27, ../sass/modules/_banner.scss */
-  header h1 a {
-    font-size: 47px;
-  }
-}
-@media screen and (max-width: 500px) {
-  /* line 27, ../sass/modules/_banner.scss */
-  header h1 a {
-    font-size: 34px;
-  }
-}
-/* line 47, ../sass/modules/_banner.scss */
-header h1 a span {
-  display: block;
-}
-/* line 49, ../sass/modules/_banner.scss */
-header h1 a em {
-  display: block;
-  font-size: 24px;
-  line-height: 16px;
-  font-family: "proxima nova soft", "proxima-nova-soft", "helvetica neue", helvetica, arial, sans-serif;
-  font-style: normal;
-}
-/* line 57, ../sass/modules/_banner.scss */
-header h1 a:hover {
-  color: #a00;
-  border: none;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
-}
-/* line 65, ../sass/modules/_banner.scss */
-header h3 a {
-  color: rgba(0, 0, 0, 0.6);
-  font-weight: 700;
-}
-/* line 66, ../sass/modules/_banner.scss */
-header h3 a:hover {
-  color: #a00;
-}
-
-/* line 1, ../sass/pages/_home.scss */
-.home {
-  text-align: center;
-}
-/* line 4, ../sass/pages/_home.scss */
-.home button.tsbutton {
-  display: inline-block;
-  margin-top: 20px;
-  background: #a00;
-  color: #fef0c4;
-  font-family: "proxima nova soft", "proxima-nova-soft", "helvetica neue", helvetica, arial, sans-serif;
-  font-weight: 100;
-  font-size: 20px;
-  border: none;
-  border-radius: 50px;
-  text-transform: uppercase;
-}
+Backtrace:
+/Users/arpanchinta/Projects/rubyconfindia/dev/source/2015/sass/style.scss:9
+/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/import_node.rb:66:in `rescue in import'
+/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/import_node.rb:45:in `import'
+/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:301:in `visit_import'
+/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:79:in `block in with_base'
+/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:115:in `with_frame'
+/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:79:in `with_base'
+/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:23:in `block in render_with_sourcemap'
+/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:22:in `render_with_sourcemap'
+/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/plugin/compiler.rb:489:in `update_stylesheet'
+/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/plugin/compiler.rb:469:in `on_file_changed'
+/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/plugin/compiler.rb:328:in `block in watch'
+/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/vendor/listen/lib/listen/listener.rb:252:in `call'
+/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/vendor/listen/lib/listen/adapter.rb:254:in `call'
+/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
+/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
+/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: It's not clear which file to import for '@import \"base/variables\"'.\A        Candidates:\A          base/_variables.scss\A          base/variables.scss\A        Please delete or rename all but one of these files.\A         on line 9 of /Users/arpanchinta/Projects/rubyconfindia/dev/source/2015/sass/style.scss\A \A 4: @import \"compass/css3\";\A 5: @import \"compass/css3/images\";\A 6: @import \"compass/utilities/general/clearfix\";\A 7: @import \"base/grids\";\A 8: \A 9: @import \"base/variables\";\A 10: @import \"base/typography\";\A 11: \A 12: @import \"modules/body\";\A 13: @import \"modules/banner\";\A 14: @import \"modules/actions\";"; }
