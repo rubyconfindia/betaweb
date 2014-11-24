@@ -1,69 +1,54 @@
-/*
-Error: It's not clear which file to import for '@import "base/variables"'.
-       Candidates:
-         base/_variables.scss
-         base/variables.scss
-       Please delete or rename all but one of these files.
-        on line 9 of /Users/arpanchinta/Projects/rubyconfindia/dev/source/2015/sass/style.scss
+*, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-4: @import "compass/css3";
-5: @import "compass/css3/images";
-6: @import "compass/utilities/general/clearfix";
-7: @import "base/grids";
-8: 
-9: @import "base/variables";
-10: @import "base/typography";
-11: 
-12: @import "modules/body";
-13: @import "modules/banner";
-14: @import "modules/actions";
+body { font: 16px/1.5 "freight-sans-pro", "helvetica neue", helvetica, arial, sans-serif; }
+@media screen and (max-width: 700px) { body { font-size: 14px; } }
 
-Backtrace:
-/Users/arpanchinta/Projects/rubyconfindia/dev/source/2015/sass/style.scss:9
-/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/import_node.rb:66:in `rescue in import'
-/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/import_node.rb:45:in `import'
-/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/import_node.rb:28:in `imported_file'
-/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/import_node.rb:37:in `css_import?'
-/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:301:in `visit_import'
-/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:79:in `block in with_base'
-/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:115:in `with_frame'
-/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:79:in `with_base'
-/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/engine.rb:285:in `render_with_sourcemap'
-/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:23:in `block in render_with_sourcemap'
-/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:22:in `render_with_sourcemap'
-/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/plugin/compiler.rb:489:in `update_stylesheet'
-/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/plugin/compiler.rb:469:in `on_file_changed'
-/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/plugin/compiler.rb:328:in `block in watch'
-/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/vendor/listen/lib/listen/adapter.rb:254:in `call'
-/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/Users/arpanchinta/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.5/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: It's not clear which file to import for '@import \"base/variables\"'.\A        Candidates:\A          base/_variables.scss\A          base/variables.scss\A        Please delete or rename all but one of these files.\A         on line 9 of /Users/arpanchinta/Projects/rubyconfindia/dev/source/2015/sass/style.scss\A \A 4: @import \"compass/css3\";\A 5: @import \"compass/css3/images\";\A 6: @import \"compass/utilities/general/clearfix\";\A 7: @import \"base/grids\";\A 8: \A 9: @import \"base/variables\";\A 10: @import \"base/typography\";\A 11: \A 12: @import \"modules/body\";\A 13: @import \"modules/banner\";\A 14: @import \"modules/actions\";"; }
+h1, h2, h3, h4, h5, h6, p, ol, ul, li { margin: 0; line-height: 1.5; font-weight: 400; color: #000; }
+
+h1 { font-size: 48px; font-weight: 800; line-height: 2em; text-transform: uppercase; }
+
+h2 { margin-top: 1.5em; font-size: 24px; font-weight: 800; }
+
+h3 { margin-top: 1em; font-size: 18px; font-weight: 800; }
+
+p, li { font-size: 18px; font-weight: 500; line-height: 1.5; color: #666666; }
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) { p, li { font-weight: 400; } }
+
+p, ul { margin-bottom: 0.5em; }
+
+strong, .strong { font-weight: bold; }
+
+body { margin: 0; padding: 0; }
+
+.main { width: 800px; max-width: 100%; padding: 20px; margin: 0 auto; }
+
+.banner { height: 500px; width: 100%; background: #a00 url("/2015/images/header.svg") center center repeat; background-size: 100% auto; text-align: center; }
+.banner div { width: 220px; padding: 20px; background: #fff; margin: 0 auto; box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2); }
+.banner a { color: inherit; text-decoration: none; }
+.banner h1 a, .banner h3 { font-weight: 300; font-family: lato; }
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) { .banner h1 a, .banner h3 { font-weight: 200; } }
+.banner h1 { padding: 90px 0 20px 0; margin-bottom: 10px; background: transparent url("/2015/images/logo.svg") no-repeat top center; background-size: 72px auto; border-bottom: solid 1px #900; color: #000; }
+.banner h1 a { display: block; font-size: 40px; line-height: 32px; text-transform: none; }
+.banner h1 span { display: block; text-align: right; font-weight: 800; font-size: 14px; line-height: 18px; text-transform: uppercase; padding-right: 8px; }
+.banner h2, .banner h3 { margin: 0; color: #900; line-height: 1.3em; }
+.banner h2 { font-size: 16px; font-weight: 700; text-transform: lowercase; }
+.banner h3 { font-size: 24px; }
+
+.actions { border-bottom: solid 1px rgba(0, 0, 0, 0.2); *zoom: 1; }
+.actions:after { content: ""; display: table; clear: both; }
+.actions h3, .actions a, .actions p { color: #900; text-decoration: none; }
+.actions h3 { font-size: 24px; font-weight: 800; }
+.actions p { font-size: 15px; }
+.actions a { display: inline-block; line-height: 36px; border-radius: 19px; margin: 10px 10px 0 -2px; padding: 0 15px; background: #fff; color: #900; border: solid 1px #900; text-transform: uppercase; font-size: 14px; font-weight: 500; }
+.actions a:after { content: "\2192"; padding-left: 4px; }
+.actions a:hover { background: #ffeb99; }
+.actions a.primary { background: #900; color: #fff; }
+.actions a.primary:hover { background: #000; }
+.actions div { display: block; position: relative; background: #fff5cc; width: 44%; float: left; padding: 0 30px; height: 160px; z-index: 20; margin-top: -100px; }
+.actions div:last-child { background: #e6e6e6; float: right; z-index: 10; text-align: right; }
+.actions div:after, .actions div:before { content: ""; display: block; position: absolute; width: 0; height: 0; top: 0; right: -160px; border: solid 80px #fff5cc; border-top-color: transparent; border-right-color: transparent; }
+.actions div:first-child:before { right: -161px; border-left-color: rgba(0, 0, 0, 0.2); border-bottom-color: rgba(0, 0, 0, 0.2); }
+.actions div:last-child:after { right: auto; left: -160px; border-bottom-color: #e6e6e6; border-right-color: #e6e6e6; border-left-color: transparent; }
+.actions div:last-child:before { display: none; }
+
+/*# sourceMappingURL=style.css.map */
